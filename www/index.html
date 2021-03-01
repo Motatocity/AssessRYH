@@ -72,7 +72,7 @@
     </nav>
 	
 	<script>
-		$.getJSON("http://172.30.10.6/rajyindee/app/getdepartment.php", function(result){
+		$.getJSON("http://172.30.0.6/rajyindee/app/getdepartment.php", function(result){
 			$.each(result, function(i, field){
 				$("#sidebar-wrapper ul").append("<li>\n<a href=\"#contact\" onclick = \"setclinic('" + field.name + "');\" >" + field.name + "</a>\n</li>");
 			});
